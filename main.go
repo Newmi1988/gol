@@ -52,19 +52,19 @@ func main() {
 				Name:        "width",
 				Usage:       "Set the width of the game field",
 				Value:       100,
-				DefaultText: "width",
+				DefaultText: "100",
 			},
 			&cli.IntFlag{
 				Name:        "height",
 				Usage:       "Set the height of the game field",
 				Value:       50,
-				DefaultText: "height",
+				DefaultText: "50",
 			},
 			&cli.IntFlag{
 				Name:        "hz",
 				Usage:       "set update rate in hz",
 				Value:       60,
-				DefaultText: "update rate",
+				DefaultText: "60",
 			},
 			&cli.IntFlag{
 				Name:        "gens",
