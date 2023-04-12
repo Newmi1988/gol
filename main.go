@@ -36,7 +36,7 @@ func (r *Runner) Run() {
 func main() {
 	app := &cli.App{
 		Name:     "Go Game of Life",
-		Version:  "0.1.0",
+		Version:  "0.1.1",
 		Compiled: time.Now(),
 		Authors: []*cli.Author{
 			&cli.Author{
@@ -63,14 +63,14 @@ func main() {
 			&cli.IntFlag{
 				Name:        "hz",
 				Usage:       "set update rate in hz",
-				Value:       50,
-				DefaultText: "width of the game field",
+				Value:       60,
+				DefaultText: "update rate",
 			},
 			&cli.IntFlag{
 				Name:        "gens",
-				Usage:       "set update rate in hz",
+				Usage:       "set the number of generations to simulate",
 				Value:       500,
-				DefaultText: "width of the game field",
+				DefaultText: "number of generations",
 			},
 			&cli.Float64Flag{
 				Name:        "fill",
